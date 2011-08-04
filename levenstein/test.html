@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Levenstein</title>
+		<script src="levenshtein.js"></script>
+	</head>
+	<body>
+		
+		<div>
+			<label>Word1</label>
+			<input id="f1" />
+		</div>
+		<div>
+			<label>Word2</label>
+			<input id="f2" />
+		</div>
+		<div>
+			<button onclick="calc()">Calculate</button>
+		</div>
+		<div>
+			Levenshtein Distance: <span id="lResult"></span>
+		</div>
+		
+		<script type="text/javascript">
+		<!--
+var f1 = document.getElementById('f1');
+var f2 = document.getElementById('f2');
+var lResult = document.getElementById('lResult');
+		
+function calc(){
+	var result = levenshtein(f1.value, f2.value);
+	
+	lResult.innerHTML='"'+f1.value+'" vs "'+f2.value+'"='+result;
+}
+		-->
+		</script>
+	</body>
+</html>
